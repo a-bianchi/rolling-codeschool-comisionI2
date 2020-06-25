@@ -10,4 +10,8 @@
 - Juan M: [@juanchimerlo10](https://github.com/juanchimerlo10)
 - Mauricio V: [@mhvagliati](https://github.com/mhvagliati)
 - Facundo S S: [@facund1n](https://github.com/facund1n)
+<<<<<<< HEAD
 - Francisco Tula:[@francisco-tula](https://github.com/fracisco-tula) ]
+=======
+- Paula L: [@Paulazarte](https://github.com/Paulazarte)
+>>>>>>> 76d3d102cee16d0f9d31b380439177f897c2ce84
