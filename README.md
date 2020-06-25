@@ -1,6 +1,6 @@
 <p align="center">
-	<a href="https://github.com/a-bianchi/react-tetris"  target="_blank">
-	<img  align="center"  alt="pineapple"  src="https://raw.githubusercontent.com/a-bianchi/react-tetris/master/src/img/tetris_128.png"  />
+	<a href="https://github.com/a-bianchi/rolling-codeschool-comisionI2"  target="_blank">
+	<img  align="center"  alt="meme"  src="https://raw.githubusercontent.com/a-bianchi/rolling-codeschool-comisionI2/master/src/img/meme.png"  />
 	</a>
 </p>
 <h1 align="center">Welcome to my friend 👋</h1>
