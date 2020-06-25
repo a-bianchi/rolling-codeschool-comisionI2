@@ -14,4 +14,8 @@
 - Celeste Ponce [@celeponce](https://github.com/celeponce)
 =======
 - Facundo S S: [@facund1n](https://github.com/facund1n)
+<<<<<<< HEAD
 >>>>>>> 1a27a7207b05a650fed95708283665f840c3b933
+=======
+- Paula L: [@Paulazarte](https://github.com/Paulazarte)
+>>>>>>> 76d3d102cee16d0f9d31b380439177f897c2ce84
