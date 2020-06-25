@@ -9,3 +9,5 @@
 - Valeria: [@valemuzzo](https://github.com/valemuzzo)
 - Juan M: [@juanchimerlo10](https://github.com/juanchimerlo10)
 - Mauricio V: [@mhvagliati](https://github.com/mhvagliati)
+
+- Celeste Ponce [@celeponce](https://github.com/celeponce)
