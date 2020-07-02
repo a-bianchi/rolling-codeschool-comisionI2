@@ -14,3 +14,4 @@
 - Facundo S S: [@facund1n](https://github.com/facund1n)
 - Francisco Tula:[@francisco-tula](https://github.com/fracisco-tula)
 - Paula L: [@Paulazarte](https://github.com/Paulazarte)
+- Vanesa: [@mariavanesals](https://github.com/mariavanesals)

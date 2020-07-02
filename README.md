@@ -10,6 +10,10 @@
 
 ## Estructura
 
-### Carpetas
-
 Vamos a crear una carpeta por clase que contenga los archivos con ejemplos.
+
+## Listado de clases
+
+1. Clase 12
+   1. Javascript variables y tipos / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/12)
+   2. Javascript arrays, metodos y tipos / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/13)
