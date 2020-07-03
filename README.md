@@ -14,7 +14,7 @@ Vamos a crear una carpeta por clase que contenga los archivos con ejemplos.
 
 ## Instructivo Git
 
-Baby Steps GitHub / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/Git-Instructions.md)
+Baby Steps GitHub / [Ver](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/Git-Instructions.md)
 
 ## Listado de clases
 
