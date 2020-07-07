@@ -12,8 +12,20 @@
 
 Vamos a crear una carpeta por clase que contenga los archivos con ejemplos.
 
-## Listado de clases
+## Instructivo Git
 
-1. Clase 12
-   1. Javascript variables y tipos / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/12)
-   2. Javascript arrays, metodos y tipos / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/13)
+Baby Steps GitHub / [Ver](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/Git-Instructions.md)
+
+# Listado de clases
+
+## Javascript
+
+1. Semana
+   1. Variables y tipos / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/12)
+   2. Variables y tipos / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/12)
+2. Semana
+   1. Arrays, metodos y tipos / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/13)
+   2. Loops o bucles, metodos string y number / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/14)
+3. Semana
+   1. Funciones
+   2. Repaso
