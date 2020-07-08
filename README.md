@@ -27,5 +27,5 @@ Baby Steps GitHub / [Ver](https://github.com/a-bianchi/rolling-codeschool-comisi
    1. Arrays, metodos y tipos / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/13)
    2. Loops o bucles, metodos string y number / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/14)
 3. Semana
-   1. Funciones
+   1. Funciones y Form Validations / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/15)
    2. Repaso
