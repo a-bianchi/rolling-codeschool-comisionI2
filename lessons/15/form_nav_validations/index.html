@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo Validar Formulario</title>
+    <!-- Incluir achivo javascript en index.html -->
+    <script src="./validate.js"></script>
+  </head>
+  <body>
+    <!-- Validacion de html5 -->
+    <form>
+      <div>
+        <label for="choose">Nombre de usuario</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          minlength="6"
+          maxlength="6"
+        />
+      </div>
+      <div>
+        <label for="number">Contraseña</label>
+        <input
+          type="passwrod"
+          id="number"
+          name="password"
+          required
+          minlength="6"
+          maxlength="6"
+        />
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

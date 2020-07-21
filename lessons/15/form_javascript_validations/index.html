@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo Validar Formulario</title>
+    <!-- Incluir achivo javascript en index.html -->
+    <script src="./js/validate.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Validacion javscript -->
+    <form
+      name="myform"
+      method="post"
+      action="#"
+      onsubmit="return validateform()"
+    >
+      Nombre: <input type="text" id="name" name="name" /><br />
+      Password: <input type="password" id="password" name="password" /><br />
+      Email: <input type="text" id="email" name="email" /><br />
+      <!-- Edad: <input type="text" id="edad" name="edad" /><br /> -->
+      <span class="error" id="error"> </span> <br />
+      <input type="submit" value="Ingresar" />
+    </form>
+    <!-- <button onclick="action()">Accion</button> -->
+  </body>
+</html>

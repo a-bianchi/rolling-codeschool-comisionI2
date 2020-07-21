@@ -45,9 +45,24 @@ for (atributo in persona) {
   }
 */
 
-var amigos = ["Pepito1", "Pepito2", "Pepito3"];
+var amigos = ["Pepito1", "Pepito2", "Pepito3", "Pepito4", "Pepito5"];
 var indice = 0;
 while (indice < amigos.length) {
-  console.log(amigos[indice]);
+  //console.log(amigos[indice]);
   indice++;
 }
+
+// Do While (Mientras)
+
+/* 
+  do{
+    // code block to be executed
+  }while(condition) 
+*/
+
+var amigos = ["Pepito1", "Pepito2", "Pepito3", "Pepito4", "Pepito5"];
+var indice = 0;
+do {
+  console.log(amigos[indice]);
+  indice++;
+} while (indice < amigos.length);
