@@ -59,16 +59,21 @@ var amigo2 = new amigo("Pepe1", 23, true)
 // console.log(amigo1 === amigo2)
 
 
-function ticket(numero, fecha, valor, nombre) {
+function ticket(numero, fecha, valor, nombre, objectoAlgo) {
   this.numero = numero
   this.fecha = fecha
   this.valor = valor
   this.nombre = nombre
+  this.otroObjeto = otroObjeto
 }
 
-var ticket1 = new ticket("1", "20/09/2020", "$120", "Arjona") // object
-var ticket2 = new ticket("2", "25/09/2020", "$240", "Panam") // object
-var ticket3 = new ticket("3", "28/09/2020", "$550", "Rata Blanca") // object
+var otroObjeto = {
+  saludo: "Hola mundo!!"
+}
+
+var ticket1 = new ticket("1", "20/09/2020", "$120", "Arjona", otroObjeto) // object
+var ticket2 = new ticket("2", "25/09/2020", "$240", "Panam", otroObjeto) // object
+var ticket3 = new ticket("3", "28/09/2020", "$550", "Rata Blanca", otroObjeto) // object
 
 //console.log(ticket1.nombre)
 
@@ -88,7 +93,8 @@ var listado = [ticket1, ticket2, ticket3] // array
 
 
 for (var indice = 0; indice < listado.length; indice++) {
-  console.log(listado[indice].nombre + " " + listado[indice].valor)
+  //console.log(listado[indice].nombre + " " + listado[indice].valor)
+  console.log(listado[indice].otroObjeto.saludo)
 }
 
 
