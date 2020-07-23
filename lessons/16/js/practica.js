@@ -23,7 +23,24 @@
 // Resuleto clase 17/7
 // Nota: Tener en cuenta la función length y substr.
 
-// ???????
+// var frase = prompt("Escriba una frase:");
+// // frase = "alejo"
+// // frase = ["a", "l", "e", "j", "o"]
+// var a = 0;
+// var variable;
+// for (indice in frase) {
+//   if (frase[indice] === 'a' || frase[indice] === 'A') {
+//     a++
+//   }
+// }
+// console.log(variable)
+// console.log("Cantidad de letras A: " + a)
+// var nombre = "alejo naranja";
+// var array = ["alejo", "martin"];
+// console.log("Cuantos elementos tiene: " + array.length)
+// console.log(array[0])
+// console.log("Cuantos caracteres tiene: " + nombre.length)
+
 
 // Ejercicios Javascript bucles(loops)
 
