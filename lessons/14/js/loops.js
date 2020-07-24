@@ -24,18 +24,22 @@ for (carcter of texto) {
 }
 
 // Objeto iterable
-var persona = {
+var persona1 = {
   nombre: "Alejo",
   edad: 13,
   altura: "1.5mt",
   equipo: "saca chispas",
 };
+var persona2 = ["Alejo", 13, "1.5mt", "saca chispas"];
 // console.log(persona.edad);
 // ["nombre", "edad", ....]
-for (atributo in persona) {
-  // console.log(atributo);
-  //console.log(persona[atributo]);
-}
+// for (item in persona) {
+//   // console.log(atributo);
+//   console.log(persona[item]);
+// }
+
+// console.log(persona1["nombre"]);
+// console.log(persona2[0]);
 
 // While (Mientras)
 
@@ -45,12 +49,12 @@ for (atributo in persona) {
   }
 */
 
-var amigos = ["Pepito1", "Pepito2", "Pepito3", "Pepito4", "Pepito5"];
-var indice = 0;
-while (indice < amigos.length) {
-  //console.log(amigos[indice]);
-  indice++;
-}
+// var amigos = ["Pepito1", "Pepito2", "Pepito3", "Pepito4", "Pepito5"];
+// var indice = 0;
+// while (indice < amigos.length) {
+//   //console.log(amigos[indice]);
+//   indice++;
+// }
 
 // Do While (Mientras)
 
@@ -60,9 +64,9 @@ while (indice < amigos.length) {
   }while(condition) 
 */
 
-var amigos = ["Pepito1", "Pepito2", "Pepito3", "Pepito4", "Pepito5"];
-var indice = 0;
-do {
-  console.log(amigos[indice]);
-  indice++;
-} while (indice < amigos.length);
+// var amigos = ["Pepito1", "Pepito2", "Pepito3", "Pepito4", "Pepito5"];
+// var indice = 0;
+// do {
+//   console.log(amigos[indice]);
+//   indice++;
+// } while (indice < amigos.length);
