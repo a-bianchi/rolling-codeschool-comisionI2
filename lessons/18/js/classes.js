@@ -86,6 +86,7 @@ class CarritoCompras {
 }
 
 var libro1 = new Libro("La biblia", "Jebus", "Cuchuflito", 15);
+
 var comic1 = new Comic(
   "Spider Man",
   "Estante Lee",
