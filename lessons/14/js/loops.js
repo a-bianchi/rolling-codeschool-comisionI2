@@ -1,11 +1,11 @@
 // Loop o bucle
 
-/*
-for (declaración1; declaración2; declaración3) {
-  // código que se va a ejecutar
-}
-*/
+// for (declaración1; declaración2; declaración3) {
+//   // código que se va a ejecutar
+// }
+
 var array = ["Pepito1", "Pepito2", "Pepito3"];
+//            array[0]   array[1]   array[2]
 for (var indice = 0; indice < array.length; indice++) {
   //console.log(array[indice]);
 }
@@ -40,14 +40,16 @@ var persona2 = ["Alejo", 13, "1.5mt", "saca chispas"];
 
 // console.log(persona1["nombre"]);
 // console.log(persona2[0]);
+// var array = ["Pepito1", "Pepito2", "Pepito3"];
+// var indice = 0
+// While(indice < array.length){
+//   //codigo que quiero que se repita
+//   indice++
+// }
 
-// While (Mientras)
-
-/* 
-  while(condition) {
-    // code block to be executed
-  }
-*/
+// while(condition) {
+//   // code block to be executed
+// }
 
 // var amigos = ["Pepito1", "Pepito2", "Pepito3", "Pepito4", "Pepito5"];
 // var indice = 0;
