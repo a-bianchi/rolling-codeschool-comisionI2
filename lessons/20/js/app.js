@@ -1,16 +1,4 @@
 // Productos
-
-class Basedatos {
-  constructor(coenxion, nombre) {
-    this._coenxion = coenxion;
-    this._nombre = nombre;
-  }
-
-  agregarProducto(producto) {
-    // agregar un producto a la base de datos
-  }
-}
-
 class Producto {
   constructor(nombre, precio, tipo, imagen) {
     this._nombre = nombre;
@@ -51,10 +39,6 @@ const evento = document
     const vista = new Vista();
 
     vista.agregarProducto(productoElemento);
-
-    const base = new Basedatos("123.12.23.4", "ProductosDb");
-
-    base.agregarProducto(productoElemento);
 
     e.preventDefault();
   });

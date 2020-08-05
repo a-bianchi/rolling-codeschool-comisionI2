@@ -1,3 +1,15 @@
+// Mock conexion a base de datos
+class Basedatos {
+  constructor(coenxion, nombre) {
+    this._coenxion = coenxion;
+    this._nombre = nombre;
+  }
+
+  agregarProducto(producto) {
+    // agregar un producto a la base de datos
+  }
+}
+
 // Productos
 class Producto {
   constructor(nombre, precio, tipo, imagen) {
@@ -35,6 +47,10 @@ const evento = document
       imagen = document.getElementById("imagen").value;
 
     const productoElemento = new Producto(nombre, precio, tipo, imagen);
+
+    const base = new Basedatos("123.12.23.4", "ProductosDb");
+
+    base.agregarProducto(productoElemento);
 
     const vista = new Vista();
 
