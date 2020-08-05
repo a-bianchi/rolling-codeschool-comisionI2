@@ -8,15 +8,15 @@
   En este repositorio vamos a subir todos los ejemplos vistos en clase.
 </p>
 
-## Estructura
+## 📂 Estructura
 
-Vamos a crear una carpeta por clase que contenga los archivos con ejemplos.
+Se crea una carpeta por clase que contenga los archivos con ejemplos.
 
-## Instructivo Git
+## :octocat: Instructivo Git
 
-Baby Steps GitHub / [Ver](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/Git-Instructions.md)
+👶 Baby Steps GitHub / [Ver](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/Git-Instructions.md)
 
-# Listado de clases
+# 🧑‍🏫 Listado de clases
 
 ## Javascript
 
