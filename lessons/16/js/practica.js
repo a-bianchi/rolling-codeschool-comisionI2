@@ -29,18 +29,39 @@
 // var a = 0;
 // var variable;
 // for (indice in frase) {
-//   if (frase[indice] === 'a' || frase[indice] === 'A') {
-//     a++
+//   if (frase[indice] === "a" || frase[indice] === "A") {
+//     a++;
 //   }
 // }
-// console.log(variable)
-// console.log("Cantidad de letras A: " + a)
+// console.log(variable);
+// console.log("Cantidad de letras A: " + a);
 // var nombre = "alejo naranja";
 // var array = ["alejo", "martin"];
-// console.log("Cuantos elementos tiene: " + array.length)
-// console.log(array[0])
-// console.log("Cuantos caracteres tiene: " + nombre.length)
+// console.log("Cuantos elementos tiene: " + array.length);
+// console.log(array[0]);
+// console.log("Cuantos caracteres tiene: " + nombre.length);
 
+// texto = "alejo"
+// texto =  [ "a", "l", "e", ..... ]
+// cantidadElementos = 5
+// var texto = prompt("Escribe una frase");
+// var cantidadElementos = texto.length;
+// for (var i = 0; i < cantidadElementos; i++) {
+//   if (
+//     texto.substr(i, 1) === "a" ||
+//     texto.substr(i, 1) === "e" ||
+//     texto.substr(i, 1) === "i" ||
+//     texto.substr(i, 1) === "o" ||
+//     texto.substr(i, 1) === "u"
+//   ) {
+//     document.write(texto.substr(i, 1));
+//   }
+// }
+
+// var text = "alejo";
+// //          [ "a", "l", "e", ..... ]
+// var resultado = text.substr(2, 3);
+// console.log(resultado);
 
 // Ejercicios Javascript bucles(loops)
 
@@ -75,10 +96,25 @@
 // }
 
 // 6) Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma :
+// 1
+// 22
+// 333
 // Resuleto clase 17/7
-// var n = 0;
+
+var cantidad = prompt("Escribe una cantidad: ");
+if (Number(cantidad) < 50) {
+  console.log("Es menor que 50");
+}
+// for (let n = 1; n <= 30; n++) {
+//   for (let rep = 0; rep < n; rep++) {
+//     document.write(n);
+//   }
+//   document.write("<br>");
+// }
+
 // var numeroQueseyo = 0;
-// for (var x = 0; x <= 30; x++) {
-//   n++;
-//   numeroQueseyo;
+// for (var x = 1; x <= 30; x++) {
+//   for (var y = 0; y < x; y++) {
+//     console.log(x);
+//   }
 // }
