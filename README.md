@@ -37,4 +37,4 @@ Se crea una carpeta por clase que contenga los archivos con ejemplos.
    2. Creando app de productos (DOM + OOP) / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/20)
 6. Semana
    1. Repaso de DOM / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/21)
-   2. Pendiente / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/22)
+   2. Repaso de DOM - Window.setInterval / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/22)
