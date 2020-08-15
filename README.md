@@ -39,7 +39,6 @@ Se crea una carpeta por clase que contenga los archivos con ejemplos.
    1. Repaso de DOM / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/21)
    2. Repaso de DOM - Window.setInterval / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/22)
 7. Semana
-   1. Eventos / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/22)
-   2. Prendiente.setInterval / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/23)
-8. Semana
-   1. Prendiente.setInterval / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/24)
+   1. Eventos - Validando un Formulario / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/23)
+   2. Eventos - Sistema Productos agregamos un login y filtro en la lista / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/24)
+
