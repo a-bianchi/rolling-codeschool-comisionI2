@@ -45,4 +45,5 @@ Se crea una carpeta por clase que contenga los archivos con ejemplos.
    1. Eventos - Validando un Formulario / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/23)
    2. Eventos - Sistema Productos agregamos un login y filtro en la lista / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/24)
 9. Semana
-   1. Json y LocalStorage / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/24)
+   1. Json y LocalStorage / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/25)
+   1. Agregando LocalStorage app Productos/ [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/26)

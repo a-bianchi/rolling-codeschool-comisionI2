@@ -12,7 +12,7 @@ const usuario = {
 // Serializar a json
 const json = JSON.stringify(usuario);
 
-//Gurdo mi usuario en localstorage
+//Guardo mi usuario en localstorage
 localStorage.setItem("usuario1", json);
 
 // Guardar otro usuario de forma chancha
@@ -26,8 +26,8 @@ const usuario1 = localStorage.getItem("usuario1");
 
 // Deserializar a objeto javascript
 const usuario1Objeto = JSON.parse(usuario1);
-console.log("Nombre de usuario:", usuario1Objeto.username);
-console.log("Contraseña:", usuario1Objeto.password);
+console.log("Nombre de usuario: ", usuario1Objeto.username);
+console.log("Contraseña: ", usuario1Objeto.password);
 
 // Guardar arreglo
 localStorage.setItem(
