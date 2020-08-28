@@ -49,4 +49,4 @@ Se crea una carpeta por clase que contenga los archivos con ejemplos.
    2. Agregando LocalStorage app Productos/ [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/26)
 10. Semana
     1. Agregando sessionStorage app Productos / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/27)
-    2. .... / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/28)
+    2. Práctica javascript y dom / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/28)
