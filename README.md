@@ -38,3 +38,21 @@ Se crea una carpeta por clase que contenga los archivos con ejemplos.
 6. Semana
    1. Repaso de DOM / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/21)
    2. Repaso de DOM - Window.setInterval / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/22)
+7. Semana
+   1. Eventos / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/22)
+   2. Prendiente.setInterval / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/23)
+8. Semana
+   1. Eventos - Validando un Formulario / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/23)
+   2. Eventos - Sistema Productos agregamos un login y filtro en la lista / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/24)
+9. Semana
+   1. Json y LocalStorage / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/25)
+   2. Agregando LocalStorage app Productos/ [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/26)
+10. Semana
+    1. Agregando sessionStorage app Productos / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/27)
+    2. Práctica javascript y dom / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/28)
+
+## Reactjs
+
+1. Semana
+   1. Instalndo Nodejs / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/29)
+   2. .... / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/30)
