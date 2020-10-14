@@ -55,4 +55,13 @@ Se crea una carpeta por clase que contenga los archivos con ejemplos.
 
 1. Semana
    1. Instalndo Nodejs / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/29)
-   2. .... / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/30)
+   2. Iniciar Reactjs / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/30)
+2. Semana
+   1. Creando App / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/31)
+   2. Creando to do list / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/31)
+3. Semana
+   1. Agrego Boostrap / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/31)
+   2. Reactjs ejemplo ciclo de vida componentes / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/32)
+4. Semana
+   1. Pryecto / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/34)
+
