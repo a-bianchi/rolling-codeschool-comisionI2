@@ -1,46 +1,22 @@
 import React from "react";
 import "./App.css";
-import { Jumbotron, Button } from "react-bootstrap";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBarCustom from "../componets/NavBarCustom";
-import CarouselCustom from "../componets/CarouselCustom";
+import Home from "./Home";
+import ErrorPage from "./ErrorPage";
+import Info from "./Info";
 
 function App() {
-  const listaImagenes = [
-    {
-      url: "https://i.ytimg.com/vi/dGqZxBvOfA0/maxresdefault.jpg",
-      alt: "gatito",
-      title: "Gatito tierno",
-      description: "Un gatito tierno gritando.",
-    },
-    {
-      url:
-        "https://www.asimplevista.com/wp-content/uploads/2019/02/1210-1410x793.jpg",
-      alt: "perrito",
-      title: "Perrito tierno",
-      description: "Un perrito tierno saludando.",
-    },
-    {
-      url: "https://i.ytimg.com/vi/dGqZxBvOfA0/maxresdefault.jpg",
-      alt: "gatito",
-      title: "Gatito tierno",
-      description: "Un gatito tierno gritando.",
-    },
-  ];
   return (
-    <div className="App">
+    <div>
       <NavBarCustom />
-      <Jumbotron>
-        <h1>Hello, world!</h1>
-        <p>
-          This is a simple hero unit, a simple jumbotron-style component for
-          calling extra attention to featured content or information.
-        </p>
-        <p>
-          <Button variant="primary">Learn more</Button>
-        </p>
-      </Jumbotron>
-      <h1>Categoria 1</h1>
-      <CarouselCustom listaImagenes={listaImagenes} />
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/error" exact sensitive component={ErrorPage} />
+          <Route path="/info" exact component={Info} />
+        </Switch>
+      </Router>
     </div>
   );
 }
