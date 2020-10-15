@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 40px !important;
+    height: 48px !important;
+    background: no-repeat 50%/100% 100%;
+    background-color: black !important;
+    border-radius: 10px !important;
+}
