@@ -1,22 +1,25 @@
 import React from "react";
-import TinySlider from "tiny-slider-react";
+import Slider from "react-slick";
+import { Image } from "react-bootstrap";
 
 function CarouselCustom(props) {
   const listado = props.listaImagenes || [];
-  const settings = {
-    lazyload: true,
-    nav: false,
-    mouseDrag: true,
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
   };
   return (
     <div>
-      <TinySlider settings={settings}>
+      <Slider settings={settings}>
         {listado.map((el, index) => (
-          <div key={index} style={{ position: "relative" }}>
-            <img className={`tns-lazy-img`} src={el.url} data-src={el} alt="" />
+          <div key={index}>
+            <Image src={el.url} rounded width={200} height={200} />
           </div>
         ))}
-      </TinySlider>
+      </Slider>
     </div>
   );
 }
