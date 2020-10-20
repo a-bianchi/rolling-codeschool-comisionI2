@@ -8,9 +8,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Container fluid="xl">
-      <App />
-    </Container>
+    <div style={{ backgroundColor: "black" }}>
+      <Container fluid>
+        <App />
+      </Container>
+    </div>
   </React.StrictMode>,
   document.getElementById("root")
 );
