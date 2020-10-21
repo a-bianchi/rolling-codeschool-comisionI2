@@ -6,6 +6,9 @@ import Footer from "../componets/Footer";
 import Home from "./Home";
 import ErrorPage from "./ErrorPage";
 import Info from "./Info";
+import Privada from "./Privada";
+import PublicRoute from "./PublicRoute";
+import PrivateRoute from "./PrivateRoute";
 
 function App() {
   return (
@@ -13,9 +16,14 @@ function App() {
       <NavBarCustom />
       <Router>
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/error" exact sensitive component={ErrorPage} />
-          <Route path="/info" exact component={Info} />
+          <PublicRoute restricted={false} component={Home} path="/" exact />
+          <PublicRoute
+            restricted={true}
+            component={Privada}
+            path="/privada"
+            exact
+          />
+          <PrivateRoute component={Info} path="/info" exact />
         </Switch>
       </Router>
       <Footer />

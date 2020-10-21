@@ -5,6 +5,15 @@ import CarouselCustom from "../componets/CarouselCustom";
 import CarouselCopado from "../componets/CarouselCopado";
 
 function Home() {
+  const helloWord = () => {
+    setTimeout(() => {
+      console.log("Hola mundo");
+    }, 1000);
+  };
+
+  function helloWord2(value) {
+    console.log(value);
+  }
   const listaImagenes = [
     {
       url: "https://i.ytimg.com/vi/dGqZxBvOfA0/maxresdefault.jpg",
@@ -78,7 +87,10 @@ function Home() {
           calling extra attention to featured content or information.
         </p>
         <p>
-          <Button variant="primary">Learn more</Button>
+          <input onChange={(e) => helloWord2(e.target.value)}></input>{" "}
+          <Button onClick={helloWord} variant="primary">
+            Learn more
+          </Button>
         </p>
       </Jumbotron>
       <h1>Categoria 1</h1>
