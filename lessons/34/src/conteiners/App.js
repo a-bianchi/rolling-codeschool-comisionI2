@@ -9,8 +9,11 @@ import Info from "./Info";
 import Privada from "./Privada";
 import PublicRoute from "./PublicRoute";
 import PrivateRoute from "./PrivateRoute";
+import { loadMockData, isLogin2 } from "../utils/functions";
 
 function App() {
+  loadMockData();
+  console.log(isLogin2("Alejo", "12345678"));
   return (
     <div>
       <NavBarCustom />
