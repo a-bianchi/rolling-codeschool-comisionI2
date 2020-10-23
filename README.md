@@ -67,5 +67,5 @@ Se crea una carpeta por clase que contenga los archivos con ejemplos.
    2. Pryecto Router/ [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/34)
 5. Semana
    1. Pryecto Eventos / [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/34)
-   2. Pryecto Boostrap/ [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/34)
+   2. React Hook/ [Folder](https://github.com/a-bianchi/rolling-codeschool-comisionI2/tree/master/lessons/35)
 
