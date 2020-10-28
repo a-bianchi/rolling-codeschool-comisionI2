@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <div style={{ backgroundColor: "black" }}>
+    <div>
       <Container fluid>
         <App />
       </Container>
