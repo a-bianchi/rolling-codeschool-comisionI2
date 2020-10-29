@@ -1,25 +1,17 @@
 import React from "react";
 import { useFormik } from "formik";
-import setUsersInLocalStorage from "../utils/user";
+import * as Yup from "yup";
 
-const validate = (values) => {
-  const errors = {};
-  if (!values.username) {
-    errors.username = "Este campo es requerido!!";
-  } else if (values.username.length < 4) {
-    errors.username = "Debe ingresar mas de 4 caracteres!!";
-  }
-
-  if (!values.password) {
-    errors.password = "El password es requerido!!!";
-  }
-
-  if (!values.email) {
-    errors.email = "El email es requerido!!";
-  }
-
-  return errors;
-};
+const validationSchema = Yup.object({
+  username: Yup.string()
+    .min(4, "Debe contener mas de cuatro caracateres!!!")
+    .max(10, "No puede contener mas de 10 caracateres!!!")
+    .required("El nombre de usuario es requerido!!!"),
+  password: Yup.string().required("El password es requerido!!"),
+  email: Yup.string()
+    .email("Debe ser un email valido!!")
+    .required("El email es requerido!!"),
+});
 
 const LoginUserForm = (props) => {
   const formik = useFormik({
@@ -28,9 +20,8 @@ const LoginUserForm = (props) => {
       password: "",
       email: "",
     },
-    validate,
+    validationSchema,
     onSubmit: (values) => {
-      setUsersInLocalStorage(values);
       console.log(values);
     },
   });
