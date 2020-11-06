@@ -11,7 +11,7 @@ const CardDetalle = (props) => {
         <Card.Body>
           <Card.Title>Detalle</Card.Title>
           <ListGroup className="list-group-flush">
-            <ListGroupItem>Nombre de Dueñ: {turno.nombreDueno}</ListGroupItem>
+            <ListGroupItem>Nombre de Dueño: {turno.nombreDueno}</ListGroupItem>
             <ListGroupItem>Nombre de Mascota: {turno.nombre}</ListGroupItem>
             <ListGroupItem>Fecha: {turno.fecha}</ListGroupItem>
             <ListGroupItem>Hora: {turno.hora}</ListGroupItem>

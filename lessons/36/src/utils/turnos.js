@@ -1,8 +1,10 @@
 const generarId = () => {
   const listTurnos = localStorage.getItem("turnos");
   if (!listTurnos) return 1;
-  const listTurnoObject = JSON.parse(listTurnos);
-  return JSON.parse(listTurnos);
+  const arrayTurnos = JSON.parse(listTurnos);
+  if (arrayTurnos.length === 0) return 1;
+  const ultimoIndex = arrayTurnos.length - 1;
+  return arrayTurnos[ultimoIndex].id + 1;
 };
 
 const getTurnosInLocalStorage = () => {
@@ -17,13 +19,29 @@ const setTurnoInLocalStorage = (turno) => {
     : [];
   turnos.push(turno);
   localStorage.setItem("turnos", JSON.stringify(turnos));
+  return turnos;
 };
 
 const eliminarTurnosInLocalStorage = (id) => {
   const listTurnos = localStorage.getItem("turnos");
   if (!listTurnos) return;
-  const listTurnoObject = JSON.parse(listTurnos);
-  return;
+  const arrayTurnos = JSON.parse(listTurnos);
+  const nuevoArraySinElemento = arrayTurnos.filter((turno) => turno.id !== id);
+  console.log(nuevoArraySinElemento);
+  localStorage.setItem("turnos", JSON.stringify(nuevoArraySinElemento));
+  return nuevoArraySinElemento;
 };
 
-export { getTurnosInLocalStorage, setTurnoInLocalStorage };
+const getTurnosPorId = (id) => {
+  const listTurnos = localStorage.getItem("turnos");
+  if (!listTurnos) return;
+  const arrayTurnos = JSON.parse(listTurnos);
+  return arrayTurnos.find((item) => item.id === id);
+};
+
+export {
+  getTurnosInLocalStorage,
+  setTurnoInLocalStorage,
+  eliminarTurnosInLocalStorage,
+  getTurnosPorId,
+};

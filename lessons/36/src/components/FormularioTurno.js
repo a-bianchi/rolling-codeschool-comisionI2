@@ -2,8 +2,21 @@ import React from "react";
 import { Form, Button } from "react-bootstrap";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { setTurnoInLocalStorage } from "../utils/turnos";
 import PropTypes from "prop-types";
+
+const validationSchema = Yup.object({
+  nombre: Yup.string()
+    .max(60, "No puede contener mas de 60 caracateres!!!")
+    .required("El nombre de la mascota es requerido!!!"),
+  nombreDueno: Yup.string()
+    .max(60, "No puede contener mas de 60 caracateres!!!")
+    .required("El nombre del dueño es requerido!!!"),
+  fecha: Yup.string().required("El fecha es requerido!!"),
+  hora: Yup.string().required("El fecha es requerido!!"),
+  sintomas: Yup.string()
+    .max(200, "No puede contener mas de 60 caracateres!!!")
+    .required("El sintomas es requerido!!"),
+});
 
 const FormularioTurno = (props) => {
   const { handleSubmit, handleChange, errors, values } = useFormik({
@@ -14,8 +27,9 @@ const FormularioTurno = (props) => {
       hora: "",
       sintomas: "",
     },
+    validationSchema,
     onSubmit: (values) => {
-      setTurnoInLocalStorage(values);
+      props.guardarEnLocalStorage(values);
     },
   });
   return (
@@ -30,6 +44,9 @@ const FormularioTurno = (props) => {
           onChange={handleChange}
           value={values.nombre}
         />
+        {errors.nombre ? (
+          <div style={{ color: "red" }}>{errors.nombre}</div>
+        ) : null}
       </Form.Group>
       <Form.Group>
         <Form.Label>Nombre Dueño</Form.Label>
@@ -41,6 +58,9 @@ const FormularioTurno = (props) => {
           onChange={handleChange}
           value={values.nombreDueno}
         />
+        {errors.nombreDueno ? (
+          <div style={{ color: "red" }}>{errors.nombreDueno}</div>
+        ) : null}
       </Form.Group>
       <Form.Group>
         <Form.Label>Fecha</Form.Label>
@@ -52,6 +72,9 @@ const FormularioTurno = (props) => {
           onChange={handleChange}
           value={values.fecha}
         />
+        {errors.fecha ? (
+          <div style={{ color: "red" }}>{errors.fecha}</div>
+        ) : null}
       </Form.Group>
       <Form.Group>
         <Form.Label>Hora</Form.Label>
@@ -63,6 +86,7 @@ const FormularioTurno = (props) => {
           onChange={handleChange}
           value={values.hora}
         />
+        {errors.hora ? <div style={{ color: "red" }}>{errors.hora}</div> : null}
       </Form.Group>
       <Form.Group>
         <Form.Label>Sintomas</Form.Label>
@@ -74,6 +98,9 @@ const FormularioTurno = (props) => {
           onChange={handleChange}
           value={values.sintomas}
         />
+        {errors.sintomas ? (
+          <div style={{ color: "red" }}>{errors.sintomas}</div>
+        ) : null}
       </Form.Group>
       <Button variant="primary" type="submit">
         {props.buttonName}
@@ -84,6 +111,7 @@ const FormularioTurno = (props) => {
 
 FormularioTurno.propTypes = {
   buttonName: PropTypes.string.isRequired,
+  guardarEnLocalStorage: PropTypes.func,
 };
 
 export default FormularioTurno;

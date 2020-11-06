@@ -2,7 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import FormularioTurno from "./components/FormularioTurno";
 import CardDetalle from "./components/CardDetalle";
-import { getTurnosInLocalStorage } from "./utils/turnos";
+import {
+  setTurnoInLocalStorage,
+  getTurnosInLocalStorage,
+  eliminarTurnosInLocalStorage,
+} from "./utils/turnos";
 
 function App() {
   const [lista, setLista] = useState([]);
@@ -17,7 +21,12 @@ function App() {
       <Row>Turnos Clinica</Row>
       <Row>
         <Col>
-          <FormularioTurno buttonName={"Agregar"} />{" "}
+          <FormularioTurno
+            buttonName={"Agregar"}
+            guardarEnLocalStorage={(values) => {
+              setLista(setTurnoInLocalStorage(values));
+            }}
+          />{" "}
         </Col>
       </Row>
       <Row>
@@ -27,7 +36,9 @@ function App() {
               <CardDetalle
                 indice={index}
                 turno={element}
-                funcionEliminar={() => console.log("Olis")}
+                funcionEliminar={() =>
+                  setLista(eliminarTurnosInLocalStorage(element.id))
+                }
               />
             </div>
           );
