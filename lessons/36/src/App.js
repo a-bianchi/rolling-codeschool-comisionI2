@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import FormularioTurno from "./components/FormularioTurno";
 import CardDetalle from "./components/CardDetalle";
+import ComponenteHijos from "./components/ComponenteHijos";
 import {
   setTurnoInLocalStorage,
   getTurnosInLocalStorage,
@@ -28,6 +29,9 @@ function App() {
             }}
           />{" "}
         </Col>
+      </Row>
+      <Row>
+        <ComponenteHijos>{"Soy un boton"}</ComponenteHijos>
       </Row>
       <Row>
         {lista.map((element, index) => {
