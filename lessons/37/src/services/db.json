@@ -1,0 +1,36 @@
+{
+  "turnos": [
+    {
+      "nombre": "Pepe",
+      "nombreDueno": "Vanesa",
+      "fecha": "05/11/2020",
+      "hora": "9hs",
+      "sintomas": "Camina muy lento!",
+      "id": 3
+    },
+    {
+      "nombre": "Hola",
+      "nombreDueno": "Hola",
+      "fecha": "10/11/2020",
+      "hora": "12",
+      "sintomas": "12",
+      "id": 5
+    },
+    {
+      "nombre": "asd",
+      "nombreDueno": "asd",
+      "fecha": "asd",
+      "hora": "asd",
+      "sintomas": "asd",
+      "id": 6
+    },
+    {
+      "nombre": "asd",
+      "nombreDueno": "asd",
+      "fecha": "asd",
+      "hora": "asd",
+      "sintomas": "asd",
+      "id": 7
+    }
+  ]
+}
