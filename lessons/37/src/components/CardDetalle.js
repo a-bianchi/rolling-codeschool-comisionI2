@@ -1,11 +1,11 @@
 import React from "react";
-import { Card, Button, ListGroup, ListGroupItem } from "react-bootstrap";
+import { Card, Button, ListGroup } from "react-bootstrap";
 import FormularioTurno from "./FormularioTurno";
 import { actualizarTurno } from "../utils/turnos";
 import PropTypes from "prop-types";
 
 const CardDetalle = (props) => {
-  const { turno, indice, funcionEliminar, funcionActualizar } = props;
+  const { turno, indice, funcionEliminar } = props;
   return (
     <>
       <Card key={indice} style={{ width: "20rem" }}>

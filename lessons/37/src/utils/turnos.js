@@ -3,13 +3,12 @@ const url = "http://localhost:3000";
 
 const generarId = async () => {
   const respuesta = await axios.get(`${url}/turnos?_order=desc&limit=1`);
-  console.log(respuesta);
   return respuesta.data.id + 1;
 };
 
 const getTurnos = async () => {
   try {
-    const respuesta = await axios.get(`${url}/turnos`);
+    const respuesta = await axios.get(`${url}/turnos?_sort=id&_order=desc`);
     return respuesta.data;
   } catch (error) {
     console.log("Error ", error);
@@ -19,8 +18,7 @@ const getTurnos = async () => {
 const setTurno = async (turno) => {
   try {
     turno.id = await generarId();
-    await axios.post(`${url}/turnos`, turno);
-    return await getTurnos();
+    return await axios.post(`${url}/turnos`, turno);
   } catch (error) {
     console.log("Error ", error);
   }
@@ -37,8 +35,7 @@ const actualizarTurno = async (turno) => {
 
 const eliminarTurno = async (id) => {
   try {
-    await axios.delete(`${url}/turnos/${id}`);
-    return await getTurnos();
+    return await axios.delete(`${url}/turnos/${id}`);
   } catch (error) {
     console.log("Error ", error);
   }
@@ -53,4 +50,22 @@ const getTurnosPorId = async (id) => {
   }
 };
 
-export { getTurnos, setTurno, eliminarTurno, getTurnosPorId, actualizarTurno };
+const validarTurnos = async (turno) => {
+  try {
+    const respuesta = await axios.get(
+      `${url}/turnos?nombre_like=${turno.nombre}&nombreDueno_like=${turno.nombreDueno}`
+    );
+    return respuesta.data;
+  } catch (error) {
+    console.log("Error ", error);
+  }
+};
+
+export {
+  getTurnos,
+  setTurno,
+  eliminarTurno,
+  getTurnosPorId,
+  actualizarTurno,
+  validarTurnos,
+};
