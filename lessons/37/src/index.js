@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(

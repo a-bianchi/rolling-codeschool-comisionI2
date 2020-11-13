@@ -8,10 +8,11 @@ import {
   eliminarTurno,
   validarTurnos,
 } from "./utils/turnos";
+import ModalCustom from "./components/ModalCustom";
 
 function App() {
   const [lista, setLista] = useState([]);
-  const [alert, setAlert] = useState(false);
+  const [show, setShow] = useState(false);
 
   useEffect(async () => {
     const storageLista = await getTurnos();
@@ -22,14 +23,14 @@ function App() {
     <div>
       <Row>Turnos Clinica</Row>
       <Row>
-        <Col>
+        <Col xs={5}>
           <FormularioTurno
             turno={{}}
             buttonName={"Agregar"}
             handlerTurno={async (values) => {
               const turnosRepetidos = await validarTurnos(values);
               if (turnosRepetidos.length > 0) {
-                setAlert(true);
+                setShow(true);
               } else {
                 await setTurno(values);
                 setLista(await getTurnos());
@@ -38,13 +39,13 @@ function App() {
           />{" "}
         </Col>
       </Row>
+      <ModalCustom
+        show={show}
+        onHide={() => setShow(false)}
+        title={"Informacion"}
+        body={"Ya existe un turno para esa mascota!!"}
+      />
       <Row>
-        {alert ? (
-          <Alert variant={"danger"}>
-            {" "}
-            No se puede sacar mas de un turno por persona!!
-          </Alert>
-        ) : null}
         {lista.length > 0 ? (
           lista.map((element, index) => {
             return (
