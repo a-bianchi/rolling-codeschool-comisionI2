@@ -4,10 +4,6 @@ const db = require("./db/db.json");
 
 app.use(express.json());
 
-function generarId() {
-  return;
-}
-
 app.get("/turnos", function (req, res) {
   res.send(db.turnos);
 });
