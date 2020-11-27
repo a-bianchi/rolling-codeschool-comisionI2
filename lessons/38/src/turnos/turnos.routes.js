@@ -5,12 +5,11 @@ const turnos = require("./turnos.controller");
 
 const router = express.Router();
 
-router.route("/:id").get(turnos.getOneTurno);
 router
-  .route("/")
-  .get(turnos.getTurnos)
-  .post(turnos.insertarTurno)
-  .put(turnos.modificarTurno)
-  .delete(turnos.eliminarTurno);
+  .route("/:id")
+  .get(turnos.getOneTurno)
+  .delete(turnos.eliminarTurno)
+  .put(turnos.modificarTurno);
+router.route("/").get(turnos.getTurnos).post(turnos.insertarTurno);
 
 module.exports = router;
