@@ -10,8 +10,12 @@ function App() {
   const [show, setShow] = useState(false);
 
   useEffect(async () => {
-    const storageLista = await getTurnos();
-    if (storageLista.data) setLista(storageLista.data);
+    try {
+      const storageLista = await getTurnos();
+      if (storageLista.data) setLista(storageLista.data);
+    } catch (error) {
+      console.log("Error: ", error);
+    }
   }, []);
 
   return (
